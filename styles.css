@@ -1,1 +1,27 @@
 /*  your css code here. If applicable */
+  body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; /* Center box horizontally */
+      align-items: center; /* Center box vertically */
+      background-color: #f0f8ff; /* Light background for contrast */
+    }
+
+    .center-box {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue; /* Light-blue background for the box */
+      border: 2px solid black; /* Black borders with 2px thickness */
+      position: relative; /* Position relative for child centering */
+    }
+
+    .center-box span {
+      position: absolute; /* Use absolute to center within the relative parent */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Move to exact center */
+      color: purple; /* Purple text color */
+      font-weight: bold;
+    }
